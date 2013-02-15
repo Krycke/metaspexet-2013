@@ -12,8 +12,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/normalize.css">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -21,8 +21,46 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="container_12">
+            <header id="logo" class="ir prefix_3 grid_6 suffix_3">
+                <hgroup>
+                    <h1>MetaSpexet</h1>
+                    <h2>Mordet på Occidentexpressen - eller en mördare på spåren</h2>
+                </hgroup>
+            </header>
+            <div id="leftSidebar" class="prefix_1 grid_2">
+                <div id="buyTickets" class="grid_2 alpha omega"></div>
+                <nav id="nav" class="grid_2 alpha omega">
+                    <ul id="nav_list">
+                        <li>Hitta Hit</li>
+                        <li>Om oss</li>
+                        <li>Sponsor</li>
+                        <li>Trailer</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="main_wrapper" class="grid_6">
+                <div id="main_top"></div>
+                <div id="main"></div>
+                <div id="main_bottom"></div>
+            </div>
+            <div id="rightSidebar" class="grid_3">
+                <div id="block">
+                    <h2>Var?</h2>
+                    <ul><li>Diselverkstan
+                            <ul><li>vid Slussen</li></ul>
+                        </li></ul>
+                    <h2>När?</h2>
+                    <ul><li>Mellan den 7-9
+                            <ul><li>Juni klockan
+                                    <ul><li>13:37</li></ul>
+                                </li></ul>
+                        </li></ul>
+
+                    <a id="hitta_hit">Hitta hit</a>
+                </div>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
@@ -31,10 +69,12 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+            (function(d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
         </script>
     </body>
 </html>
