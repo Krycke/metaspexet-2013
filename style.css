@@ -114,6 +114,37 @@ body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960p
 body {
     background: url('img/background.png') repeat 0 0;
 }
+#wrapper {
+	position: relative;
+}
+#train {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url('img/train.png');
+	width: 210px;
+	height: 174px;
+}
+#mag_glass {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url('img/mag_glass.png');
+	width: 221px;
+	height: 304px;
+}
+#gun {
+	position: absolute;
+	z-index: -1;
+	top: auto;
+	bottom: 0;
+	left: auto;
+	right: -90px;
+	background: url('img/gun.png');
+	width: 194px;
+	height: 190px;
+}
+
 #logo {
     margin-top: 6px;
     margin-bottom: 15px;
@@ -122,6 +153,14 @@ body {
 }
 #leftSidebar {
     position: relative;
+}
+#key{
+    width: 111px;
+    height: 85px;
+    position: absolute;
+    background: url('img/key.png');
+    left: 80px;
+    top: -30px;
 }
 #buyTickets {
     height: 97px;

@@ -21,7 +21,14 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container_12">
+		<div id="train"></div>
+		<div id="mag_glass"></div>
+		
+        <div class="container_12" id="wrapper">
+			
+				<div id="gun"></div>
+			
+		
             <header id="logo" class="ir prefix_3 grid_6 suffix_3">
                 <hgroup>
                     <h1>MetaSpexet</h1>
@@ -29,7 +36,8 @@
                 </hgroup>
             </header>
             <div id="leftSidebar" class="prefix_1 grid_2">
-                <div id="buyTickets" class="grid_2 alpha omega"></div>
+				<div id="buyTickets" class="grid_2 alpha omega"></div>
+				<div id="key" class="grid_2 alpha omega "></div>
                 <nav id="nav" class="grid_2 alpha omega">
                     <ul id="nav_list">
                         <li>Hitta Hit</li>
