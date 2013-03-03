@@ -507,6 +507,8 @@ body {
     margin-bottom: 15px;
     background: url('img/logo.png') no-repeat 50% 0;
     height: 326px;
+    width: 460px;
+    display: block;
 }
 #leftSidebar {
     position: relative;
