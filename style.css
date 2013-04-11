@@ -116,6 +116,10 @@ body{min-width:960px}.container_12{margin-left:auto;margin-right:auto;width:960p
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
+html {
+    overflow-y: scroll;
+}
+
 /* Small headers */
 .archive-title,
 .page-title,
@@ -460,45 +464,46 @@ body.custom-font-enabled {
 }
 #train {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -53px;
+    left: -61px;
     background: url('img/train.png') no-repeat 0 0;
-    width: 210px;
-    height: 174px;
+    width: 286px;
+    height: 232px;
 }
 #mag_glass {
     position: absolute;
     top: 5px;
     left: auto;
     right: 1px;
-    background: url('img/mag.png') no-repeat 0 0;
-    width: 221px;
-    height: 304px;
+    background: url('img/mag.png') no-repeat 0 0px;
+    margin-top: -81px;
+    width: 248px;
+    height: 341px;
 }
 #facebook {
     position: absolute;
     background: url('img/facebook.png') no-repeat 0 0;
-    top: 87px;
-    left: 40px;
-    width: 25px;
-    height: 25px;
+    top: 113px;
+    left: 55px;
+    width: 32px;
+    height: 31px;
 }
 #twitter {
     position: absolute;
     background: url('img/twitter.png') no-repeat 0 0;
-    top: 87px;
-    left: 75px;
-    width: 25px;
-    height: 25px;
+    top: 113px;
+    left: 97px;
+    width: 30px;
+    height: 30px;
 
 }
 #instagram {
     position: absolute;
     background: url('img/instagram.png') no-repeat 0 0;
-    top: 87px;
-    left: 110px;
-    width: 25px;
-    height: 25px;
+    top: 113px;
+    left: 137px;
+    width: 31px;
+    height: 31px;
 
 }
 #gun {
@@ -533,12 +538,12 @@ body.custom-font-enabled {
     position: relative;
 }
 #key{
-    width: 111px;
-    height: 85px;
+    width: 145px;
+    height: 116px;
     position: absolute;
-    background: url('img/key.png');
-    left: 80px;
-    top: -30px;
+    background: url('img/nyckel.png');
+    left: 27px;
+    top: -78px;
 }
 
 #buyTickets {
@@ -548,6 +553,10 @@ body.custom-font-enabled {
     background: url('img/biljetter.png') no-repeat 0 0;
     left: 122px;
     top: 25px;
+}
+#buyTickets:hover {
+    width: 129px;
+    margin-left: -10px;
 }
 #site-navigation {
     margin-top: 100px;
@@ -560,6 +569,10 @@ body.custom-font-enabled {
     width: 83px;
 }
 #nav_list li {
+    height: 53px;
+    width: 83px;
+}
+#nav_list a {
     font-family: cursive;
     background: url('img/flik.png') no-repeat 0 0;
     height: 41px;
@@ -568,6 +581,13 @@ body.custom-font-enabled {
     text-align: center;
     font-size: 14px;
     line-height: 40px;
+    display: block;
+}
+#nav_list a:hover {
+    margin-left: -10px;
+    /*left: -10px;*/
+    width: 90px;
+    padding-left: 0px;
 }
 #nav_list a {
     color: black;
@@ -598,11 +618,11 @@ body.custom-font-enabled {
     background: url('img/gem.png') no-repeat 0 0;
     content: '';
     position: absolute;
-    height: 84px;
-    width: 23px;
+    height: 77px;
+    width: 22px;
     left: auto;
     top: 11px;
-    right: 30px;
+    right: 35px;
 }
 
 
@@ -610,7 +630,7 @@ body.custom-font-enabled {
 #rightSidebar {
     margin-top: 90px;
     background: url('img/notepad.png') no-repeat 0 0;
-    height: 396px;
+    height: 310px;
     position: relative;
 }
 #rightSidebar:before {
@@ -619,18 +639,19 @@ body.custom-font-enabled {
     position: absolute;
     height: 90px;
     width: 87px;
-    top: -80px;
+    top: -90px;
     left: 10px;
 }
 #rightSidebar:after {
     background: url('img/penna.png') no-repeat 0 0;
     content: '';
     position: absolute;
-    height: 230px;
-    width: 57px;
-    left: auto;
-    top: 0px;
-    right: -30px;
+    height: 61px;
+    width: 196px;
+    left: 10px;
+    top: auto;
+    bottom: 10px;
+    /*right: -30px;*/
 }
 
 #block {
@@ -640,13 +661,13 @@ body.custom-font-enabled {
 #block h2 {
     text-transform: uppercase;
     font-size: 20px;
-    margin: 20px 0 5px;
+    margin: 12px 0 5px;
     font-family: cursive;
     text-decoration: underline;
     font-weight: normal;
 }
 #block h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 5px 0;
 }
 #block ul {
@@ -1306,24 +1327,27 @@ a.comment-edit-link:hover {
     line-height: 2;
     color: #5e5e5e;
 }
-.required,
-.epl_regis_field_wrapper label em{
-    color: red;
+
+.additional-attendee-lnk {
+    cursor: pointer;
 }
 
-
-
-#event_list_wrapper .event_wrapper {
-    background: #fefefe;
+.event_prices select{
+    width: 330px !important;
 }
-#event_list_wrapper .col_left {
-    width: 100%;
-}
-#event_list_wrapper .col_right {
+
+.spaces-available{
     display: none;
 }
 
+.event-meta {
+    display: none;
+}
 
+.register-link-footer {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
 
 
 
